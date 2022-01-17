@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="atum_pos_group_cash_in_out.list">
+      <field name="name">atum_pos_group_cash_in_out list</field>
+      <field name="model">atum_pos_group_cash_in_out.atum_pos_group_cash_in_out</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="atum_pos_group_cash_in_out.action_window">
+      <field name="name">atum_pos_group_cash_in_out window</field>
+      <field name="res_model">atum_pos_group_cash_in_out.atum_pos_group_cash_in_out</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="atum_pos_group_cash_in_out.action_server">
+      <field name="name">atum_pos_group_cash_in_out server</field>
+      <field name="model_id" ref="model_atum_pos_group_cash_in_out_atum_pos_group_cash_in_out"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="atum_pos_group_cash_in_out" id="atum_pos_group_cash_in_out.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="atum_pos_group_cash_in_out.menu_1" parent="atum_pos_group_cash_in_out.menu_root"/>
+    <menuitem name="Menu 2" id="atum_pos_group_cash_in_out.menu_2" parent="atum_pos_group_cash_in_out.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="atum_pos_group_cash_in_out.menu_1_list" parent="atum_pos_group_cash_in_out.menu_1"
+              action="atum_pos_group_cash_in_out.action_window"/>
+    <menuitem name="Server to list" id="atum_pos_group_cash_in_out" parent="atum_pos_group_cash_in_out.menu_2"
+              action="atum_pos_group_cash_in_out.action_server"/>
+-->
+  </data>
+</odoo>

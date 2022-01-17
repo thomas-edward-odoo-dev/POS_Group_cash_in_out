@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="group_cash_in_out_pos" model="res.groups">
+            <field name="name">Cash In/Out  ( POS ) </field>
+        </record>
+    </data>
+</odoo>
