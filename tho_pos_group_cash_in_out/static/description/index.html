@@ -1,11 +1,26 @@
+<script>
+            function copyToClipboard(id) {
+        var from = document.getElementById(id);
+        var range = document.createRange();
+        window.getSelection().removeAllRanges();
+        range.selectNode(from);
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+ }
+
+</script>
+
 <section class="oe_container oe_dark" style="overflow: hidden;
 background: #cddae8;
 border-radius: 15px;">
     <div class="mt32 mb32">
         <div class="col-md-12">
             <h2 class="oe_slogan" style="font-family: Quicksand; font-size: 35px;"><b>POS Group cash in/out</b></h2>
-            <h3 class="oe_slogn"  style="font-family: Quicksand; text-align: center;">Type of grouping for the Cash in/out</h3>
-            <h3 class="oe_slogn"  style="font-family: Quicksand; text-align: center;">You can't use that button ( Cash in/out )  if you don't have your the permission ( Cash In/Out  ( POS ) ) </h3>
+            <h3 class="oe_slogn" style="font-family: Quicksand; text-align: center;">Type of grouping for the Cash
+                in/out</h3>
+            <h3 class="oe_slogn" style="font-family: Quicksand; text-align: center;">You can't use that button ( Cash
+                in/out ) if you don't have your the permission ( Cash In/Out ( POS ) ) </h3>
         </div>
     </div>
 </section>
@@ -16,7 +31,9 @@ border-radius: 15px;">
         <i class="fa fa-hand-o-right"></i><b> App Features</b>
     </div>
     <ul class="list-unstyled mr32 ml32">
-        <li><i class="fa fa-check" style="color: #cddae8;"></i> This module controls editing in Point of Sale  Cash IN/OUT</li>
+        <li><i class="fa fa-check" style="color: #cddae8;"></i> This module controls editing in Point of Sale Cash
+            IN/OUT
+        </li>
     </ul>
 
     <br/>
@@ -44,22 +61,15 @@ border-radius: 15px;">
             <h2 class="oe_slogan">
                 Contact US
             </h2>
-            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Email : thomasedward.odoo.dev@gmail.com  <button onClick="copyToClipboard('p1')">Copy text</button></p>
-            <a href="https://www.linkedin.com/in/thomas-edward-53964a127/">Thomas Edward ( Linkedin ) </a>
-            <script>
-            function copyToClipboard(id) {
-        var from = document.getElementById(id);
-        var range = document.createRange();
-        window.getSelection().removeAllRanges();
-        range.selectNode(from);
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-        window.getSelection().removeAllRanges();
- }
-        </script>
-<!--            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Linkedin : https://www.linkedin.com/in/thomas-edward-53964a127/</p>-->
-        </div>
+            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;">
+                Email : thomasedward.odoo.dev@gmail.com
+                <button onClick="copyToClipboard('p1')">Copy text</button>
+            </p>
+            <p href="https://www.linkedin.com/in/thomas-edward-53964a127/">Thomas Edward ( Linkedin ) :
+                https://www.linkedin.com/in/thomas-edward-53964a127/ </p>
 
+            <!--            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Linkedin : https://www.linkedin.com/in/thomas-edward-53964a127/</p>-->
+        </div>
 
 
     </div>
