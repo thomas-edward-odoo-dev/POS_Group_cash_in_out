@@ -8,7 +8,7 @@
     'description': """
         Long description of module's purpose
     """,
-
+    'license': 'OPL-1',
     'author': "Thomas Edward",
     'website': "https://thomasedward.website/",
 
@@ -25,7 +25,6 @@
     'data': [
         'security/groups.xml',
         # 'security/ir.model.access.csv',
-        # 'views/asset.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
