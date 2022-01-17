@@ -38,5 +38,7 @@
             'tho_pos_group_cash_in_out/static/src/js/cash_in_out.js',
         ],
     },
+    'price': 10.0,
+    'currency': "EUR",
     'application': True,
 }
