@@ -19,16 +19,20 @@ border-radius: 15px;">
         <li><i class="fa fa-check" style="color: #cddae8;"></i> This module controls editing in Point of Sale  Cash IN/OUT</li>
     </ul>
 
-    <br/>You can see Group<br/>
+    <br/>
+    <p>You can see Group</p>
+    <br/>
     <img class="img-border img-responsive thumbnail mt32" src="group.png" style="width: 100%;"><br/>
     <br/>
-    If You Enter here
+    <p>If You Enter here</p>
     <br/>
-    <img class="img-border img-responsive thumbnail mt32" src="in_postion.png" style="width: 100%;"><br/>
-    This Output Default
+    <img class="img-border img-responsive thumbnail mt32" src="in_postion.png" style="width: 100%;">
     <br/>
-    <img class="img-border img-responsive thumbnail mt32" src="first_out.png" style="width: 100%;"><br/>
-    If you do not have the permission
+    <p>This Output Default</p>
+    <br/>
+    <img class="img-border img-responsive thumbnail mt32" src="first_out.png" style="width: 100%;">
+    <br/>
+    <p>If you do not have the permission</p>
     <br/>
     <img class="img-border img-responsive thumbnail mt32" src="output.png" style="width: 100%;"><br/>
 </section>
@@ -39,9 +43,23 @@ border-radius: 15px;">
             <h2 class="oe_slogan">
                 Contact US
             </h2>
-            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Email : thomasedward.odoo.dev@gmail.com</p>
-            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Linkedin : https://www.linkedin.com/in/thomas-edward-53964a127/</p>
+            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Email : thomasedward.odoo.dev@gmail.com</p> <button onClick="copyToClipboard('p1')">Copy text</button>
+            <p><a href="https://www.linkedin.com/in/thomas-edward-53964a127/">Thomas Edward ( Linkedin ) </a></p>
+
+<!--            <p class="btn btn-success mt8" style="background-color: #2355a6; color: #FFFFFF !important;font-size:20px;"> Linkedin : https://www.linkedin.com/in/thomas-edward-53964a127/</p>-->
         </div>
+
+        <script>
+            function copyToClipboard(id) {
+        var from = document.getElementById(id);
+        var range = document.createRange();
+        window.getSelection().removeAllRanges();
+        range.selectNode(from);
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+ }
+        </script>
 
     </div>
 </section>
