@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_atum_pos_group_cash_in_out_atum_pos_group_cash_in_out,atum_pos_group_cash_in_out.atum_pos_group_cash_in_out,model_atum_pos_group_cash_in_out_atum_pos_group_cash_in_out,base.group_user,1,1,1,1

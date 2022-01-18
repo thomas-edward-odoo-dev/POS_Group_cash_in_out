@@ -1,4 +1,4 @@
-odoo.define('atum_pos_group_cash_in_out.CashMoveButton', function(require) {
+odoo.define('tho_pos_group_cash_in_out.CashMoveButton', function(require) {
 	"use strict";
 
 	const Registries = require('point_of_sale.Registries');
@@ -10,7 +10,7 @@ odoo.define('atum_pos_group_cash_in_out.CashMoveButton', function(require) {
 	const BiCashMoveButton = (CashMoveButton) =>
 		class extends CashMoveButton {
         async onClick() {
-            const group_cash_in_out_pos = await session.user_has_group('atum_pos_group_cash_in_out.group_cash_in_out_pos');
+            const group_cash_in_out_pos = await session.user_has_group('tho_pos_group_cash_in_out.group_cash_in_out_pos');
             console.log("group_cash_in_out_pos ::> ",group_cash_in_out_pos)
                                 if(group_cash_in_out_pos){
                                     const { confirmed, payload } = await this.showPopup('CashMovePopup');
